@@ -22,6 +22,8 @@ Route::get('/', PrincipalController::class)->name('Site.Index');
 Route::get('/sobre-nos', SobreNosController::class)->name('Site.Sobre-nos');
 
 Route::get('/contato', ContatoController::class)->name('Site.Contato');
+Route::post('/contato', ContatoController::class)->name('Site.Contato');
+
 
 Route::prefix('/app')->group(function(){
     Route::get('/clientes', function(){return 'Clientes';})->name('app.clientes');
