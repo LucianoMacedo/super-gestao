@@ -6,7 +6,13 @@ use Illuminate\Http\Request;
 
 class SobreNosController extends Controller
 {
-    public function index(){
-        return 'contato';
+    /**
+     * Provision a new web server.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function __invoke()
+    {
+        return view('site.sobre-nos');
     }
 }
