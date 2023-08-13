@@ -1,22 +1,6 @@
 @extends('layouts.basico')
 @section('titulo','Contato')
 @section('content')
-<div class="topo">
-    <div class="logo">
-        <img src="img/logo.png">
-    </div>
-
-    <div class="menu">
-        <ul>
-            <ul>
-                <li><a href="{{ route('Site.Index') }}">Principal</a></li>
-                <li><a href="{{ route('Site.Sobre-nos') }}">Sobre Nós</a></li>
-                <li><a href="{{ route('Site.Contato') }}">Contato</a></li>
-            </ul>
-        </ul>
-    </div>
-</div>
-
 <div class="conteudo-pagina">
     <div class="titulo-pagina">
         <h1>Entre em contato conosco</h1>
