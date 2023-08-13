@@ -113,7 +113,7 @@
             .conteudo-destaque {
                 width: 100%;
                 height: 100%;
-                min-height: 800px; 
+                min-height: 800px;
             }
 
             .esquerda {
@@ -207,9 +207,11 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="{{ route('site.index') }}">Principal</a></li>
-                    <li><a href="{{ route('site.sobrenos') }}">Sobre Nós</a></li>
-                    <li><a href="{{ route('site.contato') }}">Contato</a></li>
+                    <ul>
+                        <li><a href="{{ route('Site.Index') }}">Principal</a></li>
+                        <li><a href="{{ route('Site.Sobre-nos') }}">Sobre Nós</a></li>
+                        <li><a href="{{ route('Site.Contato') }}">Contato</a></li>
+                    </ul>
                 </ul>
             </div>
         </div>
@@ -240,15 +242,15 @@
                         <button type="submit" class="borda-preta">ENVIAR</button>
                     </form>
                 </div>
-            </div>  
+            </div>
         </div>
 
         <div class="rodape">
             <div class="redes-sociais">
                 <h2>Redes sociais</h2>
-                <img src="img/facebook.png">
-                <img src="img/linkedin.png">
-                <img src="img/youtube.png">
+                <img src="{{asset('img/facebook.png')}}">
+                <img src="{{asset('img/linkedin.png')}}">
+                <img src="{{asset('img/youtube.png')}}">
             </div>
             <div class="area-contato">
                 <h2>Contato</h2>
@@ -258,7 +260,7 @@
             </div>
             <div class="localizacao">
                 <h2>Localização</h2>
-                <img src="img/mapa.png">
+                <img src="{{asset('img/mapa.png')}}">
             </div>
         </div>
     </body>
